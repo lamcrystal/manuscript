@@ -12,19 +12,20 @@ body{
 
 /* Headings */
 
-h1, h2, h3 {
-	font-family: Inter, sans-serif;
+h1, h2 {
+	font-family: Bebas Neue, sans-serif;
 	line-height: 1.1;
-	text-wrap: balance
+	text-wrap: balance;
 	}
 
 h1{
-	font-size: 3rem;
-	max-width: 32ch;
+	font-size: 3.8rem;
+	max-width: 40ch;
+	color: crimson;
 }
 
 h2{
-	font-size: 1.8rem;
+	font-size: 2.2rem;
 	}
 
 .subtitle{
@@ -32,14 +33,19 @@ h2{
 		line-height: 1.2;
 	}
 
+h3{
+	font-family: Inter, sans-serif;
+	font-size: 1.4rem;
+}
+
 article header p, article header time {
-	font-size: 0.8rem
+	font-size: 0.8rem;
 }
 
 /* Links */
 
 a{
-	color: rgb(237, 13, 58)
+	color: rgb(237, 13, 58);
 }
 
 p a{
@@ -49,6 +55,18 @@ p a{
 p{
 	line-height: 1.5;
 	max-width: 90ch;
+	text-wrap: pretty;
+/* text-wrap: pretty - MDN/ Google to improve linewrapping/ rag and avoid orphans */
 	}
 
+em {
+    font-style: italic;
+}
 
+strong {
+    font-weight: bold;
+}
+
+#response {
+	margin-block-start: 3rem;
+}
