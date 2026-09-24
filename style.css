@@ -1,7 +1,7 @@
 html{
 	font-family: Inter, sans-serif;
 	font-size: 1.2rem;
-}
+	}
 
 body{
 	color: black;
@@ -11,7 +11,6 @@ body{
 *:where(:not(:first-child)) { margin-block-start: 1em; }
 
 /* Headings */
-
 h1, h2 {
 	font-family: Bebas Neue, sans-serif;
 	line-height: 1.1;
@@ -21,7 +20,7 @@ h1, h2 {
 h1{
 	font-size: 3.8rem;
 	max-width: 40ch;
-}
+	}
 
 h2{
 	font-size: 2.2rem;
@@ -35,17 +34,17 @@ h2{
 h3{
 	font-family: Inter, sans-serif;
 	font-size: 1.4rem;
-}
+	}
 
 article header p, article header time {
 	font-size: 0.8rem;
-}
+	}
 
 /* Links */
 
 a{
 	color: rgb(237, 13, 58);
-}
+	}
 
 p a{
 	text-decoration: underline;
@@ -55,17 +54,17 @@ p{
 	line-height: 1.5;
 	max-width: 90ch;
 	text-wrap: pretty;
-/* text-wrap: pretty - MDN/ Google to improve linewrapping/ rag and avoid orphans */
+/* text-wrap: pretty - searched Google/ found on MDN - wanted to improve linewrapping/ rag and avoid orphans */
 	}
 
 em {
     font-style: italic;
-}
+	}
 
 strong {
     font-weight: bold;
-}
+	}
 
 #response {
 	margin-block-start: 3rem;
-}
+	}
