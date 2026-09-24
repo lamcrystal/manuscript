@@ -10,26 +10,45 @@ body{
 
 *:where(:not(:first-child)) { margin-block-start: 1em; }
 
-h1, h2, h3 {font-family: Inter, sans-serif;}
+/* Headings */
+
+h1, h2, h3 {
+	font-family: Inter, sans-serif;
+	line-height: 1.1;
+	text-wrap: balance
+	}
 
 h1{
 	font-size: 3rem;
-	line-height: 1.1;
 	max-width: 32ch;
 }
 
 h2{
 	font-size: 1.8rem;
-	line-height: 1.1;
 	}
 
-a{
-	color: rgb(237, 13, 58);
-	text-decoration: underline;
+.subtitle{
+		font-size: 1.4rem;
+		line-height: 1.2;
+	}
+
+article header p, article header time {
+	font-size: 0.8rem
 }
 
+/* Links */
+
+a{
+	color: rgb(237, 13, 58)
+}
+
+p a{
+	text-decoration: underline;
+}
 
 p{
 	line-height: 1.5;
 	max-width: 90ch;
 	}
+
+
