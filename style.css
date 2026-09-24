@@ -1,4 +1,34 @@
-body { color: black; }
-body { padding: 3rem; }
+html{
+	font-family: Inter, sans-serif;
+	font-size: 1.2rem;
+}
+
+body{
+	color: black;
+	padding: 3rem;
+	}
+
 *:where(:not(:first-child)) { margin-block-start: 1em; }
 
+h1, h2, h3 {font-family: Inter, sans-serif;}
+
+h1{
+	font-size: 3rem;
+	line-height: 1.1;
+	max-width: 32ch;
+}
+
+h2{
+	font-size: 1.8rem;
+	line-height: 1.1;
+	}
+
+a{
+	text-decoration: underline;
+}
+
+
+p{
+	line-height: 1.5;
+	max-width: 90ch;
+	}
