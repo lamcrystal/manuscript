@@ -6,7 +6,9 @@ html{
 body{
 	color: black;
 	padding: 3rem;
+	background: linear-gradient(white, lavenderblush,seashell, white);
 	}
+	/* linear-gradient researched on Google/ MDN */
 
 *:where(:not(:first-child)) { margin-block-start: 1em; }
 
