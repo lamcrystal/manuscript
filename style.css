@@ -5,8 +5,9 @@ html{
 
 body{
 	color: black;
-	padding: 3rem;
-	background: linear-gradient(white, lavenderblush,seashell, white);
+	padding-block: 3rem;
+	padding-inline: 3rem;
+	background: linear-gradient(white, lavenderblush,seashell, ivory);
 	}
 	/* linear-gradient researched on Google/ MDN */
 
@@ -29,21 +30,55 @@ h2{
 	}
 
 .subtitle{
-		font-size: 1.4rem;
+		font-size: 1.35rem;
 		line-height: 1.2;
 	}
 
 h3{
 	font-family: Inter, sans-serif;
-	font-size: 1.4rem;
+	font-size: 1.35rem;
+	}
+
+/* Navigation */
+nav{
+	margin-block-end: 3rem;
+	}
+
+nav a {
+	display: inline-block;
+	padding: 0.75rem 1rem;
+	margin-inline-end: 0.5rem;
+	color: white;
+	background-color: black;
+	}
+
+nav a:hover{
+	color: black;
+	background-color: red;
+	}
+
+	/* Article & Reading */
+article{
+	max-width: 65rem;
+	padding-block: 3rem;
+	padding-inline: 3rem;
+	margin-block-end: 4rem;
+	background-color: white;
 	}
 
 article header p, article header time {
 	font-size: 0.8rem;
 	}
 
-/* Links */
+/* Body Text */
+p{
+	line-height: 1.5;
+	max-width: 90ch;
+	text-wrap: pretty;
+	/* text-wrap: pretty - searched Google/ found on MDN - wanted to improve linewrapping/ rag and avoid orphans */
+	}
 
+/* Links */
 a{
 	color: rgb(237, 13, 58);
 	}
@@ -52,12 +87,13 @@ p a{
 	text-decoration: underline;
 }
 
-p{
-	line-height: 1.5;
-	max-width: 90ch;
-	text-wrap: pretty;
-/* text-wrap: pretty - searched Google/ found on MDN - wanted to improve linewrapping/ rag and avoid orphans */
+/* Response */
+
+#response {
+	margin-block-start: 3rem;
 	}
+
+/* Emphasis */
 
 em {
     font-style: italic;
@@ -65,8 +101,4 @@ em {
 
 strong {
     font-weight: bold;
-	}
-
-#response {
-	margin-block-start: 3rem;
 	}
