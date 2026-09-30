@@ -139,6 +139,7 @@ p a{
 /* Response */
 
 #response {
+	padding-block-start: 4rem;
 	margin-block-start: 3rem;
 	}
 
