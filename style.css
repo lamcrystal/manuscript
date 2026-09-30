@@ -20,8 +20,13 @@ body{
 	padding-block: var(--page-padding);
 	padding-inline: var(--page-padding);
 	/* Gradient to tie into the article */
-	background: linear-gradient(white, lavenderblush,seashell, ivory);
+	background: linear-gradient(mistyrose,lavenderblush,seashell, ivory);
 	/* linear-gradient researched on Google/ MDN */
+	}
+
+.course-info {
+	padding-block: 0.75rem;
+	margin-block-end: 3rem;
 	}
 
 /* Page header */
@@ -148,10 +153,12 @@ strong {
 	}
 /* Blockquotes */
 blockquote {
-	max-width: 80ch;
+	max-width: 60ch;
 	margin-block: 2.5rem;
 	margin-inline: auto;
+	padding-block: 1rem;
 	padding-inline: 1.5rem;
+	border-inline-start: 0.2rem solid pink;
 	font-size: 1.2rem;
 	line-height: 1.5;
 	}
