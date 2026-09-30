@@ -3,30 +3,58 @@
 :root {
 	font-family: "Space Grotesk", sans-serif;
 	font-size: 1.2rem;
+	/* For consistent spacing & content width */
 	--page-padding: 3rem;
+	--section-spacing: 4rem;
+	--content-width: 62rem;
 	}
 
+/* General spacing */
+*:where(:not(:first-child)) {
+	margin-block-start: 1em;
+	}
+
+/* Page */
 body{
 	color: black;
 	padding-block: var(--page-padding);
 	padding-inline: var(--page-padding);
+	/* Gradient to tie into the article */
 	background: linear-gradient(white, lavenderblush,seashell, ivory);
-	}
 	/* linear-gradient researched on Google/ MDN */
+	}
 
-*:where(:not(:first-child)) { margin-block-start: 1em; }
+/* Page header */
+/* Center the main page header (first body header/ direct child of body) */
+body > header {
+	max-width: var(--content-width);
+	margin-inline: auto;
+	text-align: center;
+	}
 
 /* Headings */
 h1, h2 {
-	font-family: Bebas Neue, sans-serif;
+	font-family: "Bebas Neue", sans-serif;
 	line-height: 1.1;
 	text-wrap: balance;
 	}
 
 h1{
+	/* Responsive heading size for title! */
 	font-size: calc(3rem + 1vw);
 	/* base size of 3, gets larger as viewport gets wider*/
 	max-width: 40ch;
+	margin-inline: auto;
+	}
+
+/* Center project title and course */
+body > header hgroup {
+	text-align: center;
+	}
+
+body > header hgroup h1 {
+	max-width: 40ch;
+	margin-inline: auto;
 	}
 
 h2{
@@ -45,7 +73,7 @@ h3{
 
 /* Navigation */
 nav{
-	margin-block-end: 3rem;
+	margin-block-end: var(--section-spacing);
 	}
 
 nav a {
@@ -64,6 +92,7 @@ nav a:hover{
 	/* Article & Reading */
 article{
 	max-width: 62rem;
+	margin-inline: auto;
 	padding-block: var(--page-padding);
 	padding-inline: var(--page-padding);
 	margin-block-end: 4rem;
@@ -72,6 +101,17 @@ article{
 
 article header p, article header time {
 	font-size: 0.8rem;
+	}
+
+/* add space between date, and article link */
+article header time {
+	display: block;
+	margin-block-start: 0.75rem;
+	}
+
+article header > a {
+	display: inline-block;
+	margin-block-start: 2rem;
 	}
 
 /* Body Text */
