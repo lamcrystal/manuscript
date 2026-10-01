@@ -142,7 +142,7 @@ p{
 
 /* Links */
 a{
-	color: rgb(237, 13, 58);
+	color: red;
 }
 
 p a{
@@ -158,10 +158,9 @@ p a{
 
 /* Larger red statments to emphasize my main takeaways */
 .statement {
-	max-width: 45ch;
 	margin-block: var(--space-md);
 	margin-inline: auto;
-	font-size: var(--text-h3);
+	font-size: 1.5rem;
 	line-height: 1;
 	text-align: center;
 	color: red;
