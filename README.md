@@ -1,12 +1,11 @@
-<!--
-This file provides context/instruction for your repository! They are written in Markdown (.md), for simple formatting:
-https://www.markdownguide.org/cheat-sheet/
--->
-
 # Project 1: *Manuscript*
 
-Demo/template for our [first projects](https://typography-interaction-2627.github.io/project/1/).
+I chose Daisy Alioto’s [“Thoughts on Gradients: the colorful design trend aiming to soothe these anxious times”](https://www.vox.com/the-goods/2019/3/1/18241592/gradients-facebook-coachella-daily-fading-pastel-design-trend), originally published in Vox in 2019 because I have always liked gradients and was interested in looking more closely at the cultural influences and meanings behind a visual style I usually think of as purely aesthetic.
 
-> **Students will choose a seminal design text from [readings.design](https://readings.design), read and respond to it, and typeset their selection and reply together.**
->
-> The goal of this project is to hone your basic skills in typography, focusing on expression, hierarchy, and form appropriate to a work. You will do this through exploration, trial and error, and responding to critical feedback. And then you will execute this typesetting in code, as a web page
+For the design, I used Bebas Neue for headings and Space Grotesk for body text to create contrast between the expressive headings and longer-form reading. I also used a pastel gradient background inspired by the subject of the article. I focused on spacing, typography, color, links, and semantic HTML to create a visual hierarchy and make the long article easier to navigate.
+
+I also used the gradient as a visual cue to the article’s references to sunsets, Light and Space art, vaporwave, and other gradient-based imagery, especially since the manuscript is text only.
+
+My response considers how gradients have become more familiar in contemporary branding and interaction design, and whether they communicate meaning beyond aesthetics.
+
+Based on [Project 1: Manuscript](https://typography-interaction-2627.github.io/project/1/).
