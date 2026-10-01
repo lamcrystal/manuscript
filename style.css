@@ -17,10 +17,10 @@
 
 /* Text/ type size system */
 	--text-body: 1.2rem;
-	--text-subtitle: 1.32rem;
+	--text-subtitle: 1.35rem;
 	--text-h3: 1.8rem;
 	--text-h2: 2.3rem;
-	--text-h1: 4.6rem;
+	--text-h1: calc(var(--text-h2)*2);
 
 /* Width */
 	--content-width: 65rem;
@@ -38,7 +38,7 @@ body{
 	padding-block: var(--page-padding);
 	padding-inline: var(--page-padding);
 	/* Gradient to tie into the article */
-	background: linear-gradient(peachpuff,pink,plum, thistle);
+	background: linear-gradient(peachpuff,pink,thistle, plum);
 	/* linear-gradient researched on Google/ MDN https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/linear-gradient, found colour names on Google!*/
 }
 
@@ -102,21 +102,6 @@ nav{
 	margin-block-end: var(--section-spacing);
 }
 
-/* Each nav link is an individual box and the padding creates space in the box */
-nav a {
-	display: inline-block;
-	padding: 0.75rem 1rem;
-	margin-inline-end: 0.5rem;
-	color: white;
-	background-color: black;
-}
-
-/* Add an interactive state using the same black and red visual language */
-nav a:hover{
-	color: black;
-	background-color: red;
-}
-
 	/* Article & Reading */
 article{
 	max-width: var(--content-width);
@@ -135,6 +120,7 @@ article header {
 		font-size: 0.8rem;
 	}
 }
+
 	> a {
     display:inline-block;
     margin-block-start: var(--space-sm);
@@ -202,4 +188,20 @@ footer {
 
 footer p {
 	max-width: none;
+}
+
+/* Buttons (Nav included) */
+/* Each button link is an individual box and the padding creates space in the box */
+.button {
+	display: inline-block;
+	padding-block: var(--space-sm);
+	padding-inline: var(--space-sm);
+	border: 0.1rem solid black;
+	background-color: white;
+	color: black;
+}
+/* Add an interactive state */
+.button:hover {
+	background-color: red;
+	color: white
 }
