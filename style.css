@@ -203,10 +203,11 @@ footer p {
 /* Each button link is an individual box and the padding creates space in the box */
 .button {
 	display: inline-block;
+	margin-block-start: var(--space-sm);
 	padding-block: var(--space-sm);
 	padding-inline: var(--space-sm);
 	border: 0.1rem solid black;
-	background-color: white;
+	background-color: transparent;
 	color: black;
 }
 /* Add an interactive state */
