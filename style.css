@@ -3,13 +3,31 @@
 :root {
 	font-family: "Space Grotesk", sans-serif;
 	font-size: 1.2rem;
-	/* For consistent spacing & content width */
-	--page-padding: 3rem;
-	--section-spacing: 4rem;
-	--content-width: 62rem;
+
+	/* Spacing value system
+	to create a consistent rhythym */
+	--space-sm: 1rem;
+	--space-md: 2rem;
+	--space-lg: 3rem;
+	--space-xl: 4rem;
+
+/* Page layout*/
+	--page-padding: var(--space-lg);
+	--section-spacing: var(--space-xl);
+
+/* Text/ type size system */
+	--text-body: 1.2rem;
+	--text-subtitle: 1.32rem;
+	--text-h3: 1.8rem;
+	--text-h2: 2.3rem;
+	--text-h1: 4.6rem;
+
+/* Width */
+	--content-width: 65rem;
+	--text-width: 80ch;
 }
 
-/* General spacing */
+/* General spacing to create a baseline rhythm between elements */
 *:where(:not(:first-child)) {
 	margin-block-start: 1em;
 }
@@ -20,13 +38,16 @@ body{
 	padding-block: var(--page-padding);
 	padding-inline: var(--page-padding);
 	/* Gradient to tie into the article */
-	background: linear-gradient(mistyrose,lavenderblush,seashell, ivory);
+	background: linear-gradient(peachpuff,pink,plum, thistle);
 	/* linear-gradient researched on Google/ MDN https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/linear-gradient, found colour names on Google!*/
 }
 
 .course-info {
-	padding-block: 0.75rem;
-	margin-block-end: 3rem;
+	padding-block: var(--space-sm);
+	margin-block-end: var(--space-lg);
+	margin-inline: auto;
+	max-width: none;
+	text-align: center;
 }
 
 /* Page header */
@@ -40,37 +61,48 @@ body > header {
 /* Headings */
 h1, h2 {
 	font-family: "Bebas Neue", sans-serif;
+	/* Bebas Neue creates a strong contrast with Space Grotesk (used for body)*/
 	line-height: 1.1;
 	text-wrap: balance;
+	/* text-wrap: balance helps long heading form intentional line breaks*/
 }
 
 h1{
 	/* Responsive heading size for title! */
-	font-size: calc(3rem + 1vw);
-	/* base size of 3, gets larger as viewport gets wider*/
+	font-size: var(--text-h1);
 	max-width: 40ch;
 	margin-inline: auto;
 }
 
 h2{
-	font-size: 2.2rem;
-}
-
-.subtitle{
-		font-size: 1.25rem;
-		line-height: 1.2;
+	font-size: var(--text-h2);
 }
 
 h3{
-	font-family: "Space Grotesk", sans-serif;
-	font-size: 1.35rem;
+	font-family: "Bebas Neue", sans-serif;
+	font-size: var(--text-h3);
+	line-height: 1;
+	text-align: center;
+	margin-block-start: var(--space-xl);
+	margin-block-end: var(--space-md);
+
+}
+
+.subtitle{
+		font-size: var(--text-subtitle);
+		line-height: 1.3;
+		max-width: none;
+		margin-inline: auto;
 }
 
 /* Navigation */
+
+/* Give navigation more space before the article */
 nav{
 	margin-block-end: var(--section-spacing);
 }
 
+/* Each nav link is an individual box and the padding creates space in the box */
 nav a {
 	display: inline-block;
 	padding: 0.75rem 1rem;
@@ -79,6 +111,7 @@ nav a {
 	background-color: black;
 }
 
+/* Add an interactive state using the same black and red visual language */
 nav a:hover{
 	color: black;
 	background-color: red;
@@ -88,32 +121,36 @@ nav a:hover{
 article{
 	max-width: var(--content-width);
 	margin-inline: auto;
-	padding-block: var(--page-padding);
+	padding-block: var(--space-xl);
 	padding-inline: var(--page-padding);
 	margin-block-end: var(--section-spacing);
 	background-color: white;
 }
 
 
-article header{
-    p,
-    time {font-size: 0.8rem;}
+article header {
+	> hgroup {
+    p:not(.subtitle),
+    time {
+		font-size: 0.8rem;
+	}
 }
-
-time {
-    display: block;
-    margin-block-start: 0.75rem;
-}
-
-> a {
+	> a {
     display:inline-block;
-    margin-block-start: 2rem;
+    margin-block-start: var(--space-sm);
+	}
+}
+
+time{
+    display: block;
+    margin-block-start: var(--space-sm);
 }
 
 /* Body Text */
 p{
-	line-height: 1.5;
-	max-width: 90ch;
+	font-size: var(--text-body);
+	line-height: 1.6;
+	max-width: var(--text-width);
 	text-wrap: pretty;
 	/* text-wrap: pretty - searched Google/ found on MDN - wanted to improve linewrapping/ rag and avoid orphans */
 }
@@ -154,4 +191,15 @@ blockquote {
 	border-inline-start: 0.2rem solid pink;
 	font-size: 1.3rem;
 	line-height: 1.5;
+}
+
+footer {
+	max-width: var(--content-width);
+	margin-inline: auto;
+	padding-block: var(--space-lg);
+	text-align: center;
+}
+
+footer p {
+	max-width: none;
 }
