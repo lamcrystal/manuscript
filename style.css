@@ -178,7 +178,7 @@ strong {
 
 /* Blockquotes */
 blockquote {
-	max-width: 60ch;
+	max-width: 55ch;
 	margin-block: 2.5rem;
 	margin-inline: auto;
 	padding-block: 1rem;
