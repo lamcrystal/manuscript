@@ -37,7 +37,7 @@ body{
 	color: black;
 	padding-block: var(--page-padding);
 	padding-inline: var(--page-padding);
-	/* Gradient to tie into the article */
+	/* Gradient to tie into the article's discussion of sunsets, Light and Space, vaporwave, and gradient imagery (without using images!) */
 	background: linear-gradient(peachpuff,pink,thistle, plum);
 	/* linear-gradient researched on Google/ MDN https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/linear-gradient, found colour names on Google!*/
 }
@@ -61,7 +61,7 @@ body > header {
 /* Headings */
 h1, h2 {
 	font-family: "Bebas Neue", sans-serif;
-	/* Bebas Neue creates a strong contrast with Space Grotesk (used for body)*/
+	/* Bebas Neue gives an expressive voice and creates a strong contrast with Space Grotesk that keeps long form reading interesting but legible */
 	line-height: 1.1;
 	text-wrap: balance;
 	/* text-wrap: balance helps long heading form intentional line breaks*/
@@ -163,7 +163,7 @@ p a{
 	margin-inline: auto;
 	font-size: var(--text-h3);
 	line-height: 1;
-	text-align: right;
+	text-align: center;
 }
 
 /* Emphasis */
