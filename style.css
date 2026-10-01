@@ -4,8 +4,7 @@
 	font-family: "Space Grotesk", sans-serif;
 	font-size: 1.2rem;
 
-	/* Spacing value system
-	to create a consistent rhythym */
+/* Spacing value system to create a consistent rhythym */
 	--space-sm: 1rem;
 	--space-md: 2rem;
 	--space-lg: 3rem;
@@ -18,7 +17,7 @@
 /* Text/ type size system */
 	--text-body: 1.2rem;
 	--text-subtitle: 1.35rem;
-	--text-h3: 1.8rem;
+	--text-h3: 2rem;
 	--text-h2: 2.3rem;
 	--text-h1: calc(var(--text-h2)*2);
 
@@ -102,7 +101,7 @@ nav{
 	margin-block-end: var(--section-spacing);
 }
 
-	/* Article & Reading */
+/* Article & Reading */
 article{
 	max-width: var(--content-width);
 	margin-inline: auto;
@@ -157,13 +156,15 @@ p a{
 	margin-block-start: 3rem;
 }
 
+/* Larger red statments to emphasize my main takeaways */
 .statement {
 	max-width: 45ch;
-	margin-block: var(--space-lg);
+	margin-block: var(--space-md);
 	margin-inline: auto;
 	font-size: var(--text-h3);
 	line-height: 1;
 	text-align: center;
+	color: red;
 }
 
 /* Emphasis */
@@ -199,7 +200,7 @@ footer p {
 	max-width: none;
 }
 
-/* Buttons (Nav included) */
+/* Buttons */
 /* Each button link is an individual box and the padding creates space in the box */
 .button {
 	display: inline-block;
