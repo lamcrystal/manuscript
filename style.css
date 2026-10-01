@@ -157,6 +157,15 @@ p a{
 	margin-block-start: 3rem;
 }
 
+.statement {
+	max-width: 45ch;
+	margin-block: var(--space-lg);
+	margin-inline: auto;
+	font-size: var(--text-h3);
+	line-height: 1;
+	text-align: right;
+}
+
 /* Emphasis */
 
 em {
