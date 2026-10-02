@@ -6,9 +6,9 @@
 
 /* Spacing value system to create a consistent rhythym */
 	--space-sm: 1rem;
-	--space-md: 2rem;
-	--space-lg: 3rem;
-	--space-xl: 4rem;
+	--space-md: calc(var(--space-sm)*2);
+	--space-lg: calc(var(--space-sm)*3);
+	--space-xl: calc(var(--space-sm)*4);
 
 /* Page layout*/
 	--page-padding: var(--space-lg);
@@ -16,14 +16,14 @@
 
 /* Text/ type size system */
 	--text-body: 1.2rem;
-	--text-subtitle: 1.35rem;
-	--text-h3: 2rem;
-	--text-h2: 2.35rem;
-	--text-h1: calc(var(--text-h2)*2);
+	--text-subtitle: calc(var(--text-body)*1.1);
+	--text-h3: calc(var(--text-body)*2.5);
+	--text-h2: calc(var(--text-body)*3.8);
+	--text-h1: calc(var(--text-body)*5.2);
 
 /* Width */
 	--content-width: 65rem;
-	--text-width: 80ch;
+	--text-width: 65ch;
 }
 
 /* General spacing to create a baseline rhythm between elements */
@@ -43,7 +43,7 @@ body{
 
 .course-info {
 	padding-block: var(--space-sm);
-	margin-block-end: var(--space-lg);
+	margin-block-end: var(--space-md);
 	margin-inline: auto;
 	max-width: none;
 	text-align: center;
@@ -81,7 +81,6 @@ h3{
 	font-family: "Bebas Neue", sans-serif;
 	font-size: var(--text-h3);
 	line-height: 1;
-	text-align: center;
 	margin-block-start: var(--space-xl);
 	margin-block-end: var(--space-md);
 
@@ -152,8 +151,10 @@ p a{
 /* Response */
 
 #response {
-	padding-block-start: 4rem;
-	margin-block-start: 3rem;
+	padding-block-start: var(--space-xl);
+	margin-block-start: var(--space-lg);
+	margin-inline-start: auto;
+	margin-inline-end: 5;
 }
 
 /* Larger red statments to emphasize my main takeaways */
@@ -183,7 +184,7 @@ blockquote {
 	padding-block: 1rem;
 	padding-inline: 1.5rem;
 	border-inline-start: 0.2rem solid pink;
-	font-size: 1.3rem;
+	font-size: var(--text-subtitle);
 	line-height: 1.5;
 }
 
