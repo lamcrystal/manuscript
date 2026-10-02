@@ -115,7 +115,7 @@ article header {
 	> hgroup {
     p:not(.subtitle),
     time {
-		font-size: 0.8rem;
+		font-size: 0.9rem;
 	}
 }
 
