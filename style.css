@@ -186,7 +186,7 @@ blockquote {
 	margin-inline: auto;
 	padding-block: 1rem;
 	padding-inline: 1.5rem;
-	border-inline-start: 0.2rem solid pink;
+	border-inline-start: 0.2rem solid red;
 	font-size: var(--text-subtitle);
 	line-height: 1.5;
 }
