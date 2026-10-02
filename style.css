@@ -28,7 +28,7 @@
 
 /* General spacing to create a baseline rhythm between elements */
 *:where(:not(:first-child)) {
-	margin-block-start: 1em;
+	margin-block-start: 1.5em;
 }
 
 /* Page */
@@ -37,7 +37,7 @@ body{
 	padding-block: var(--page-padding);
 	padding-inline: var(--page-padding);
 	/* Gradient to tie into the article's discussion of sunsets, Light and Space, vaporwave, and gradient imagery (without using images!) */
-	background: linear-gradient(peachpuff,pink,thistle, plum);
+	background: linear-gradient(papayawhip,mistyrose ,lavender, lightblue);
 	/* linear-gradient researched on Google/ MDN https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Values/gradient/linear-gradient, found colour names on Google!*/
 }
 
@@ -71,6 +71,7 @@ h1{
 	font-size: var(--text-h1);
 	max-width: 40ch;
 	margin-inline: auto;
+	margin-block-start: 0;
 }
 
 h2{
@@ -81,7 +82,7 @@ h3{
 	font-family: "Bebas Neue", sans-serif;
 	font-size: var(--text-h3);
 	line-height: 1;
-	margin-block-start: var(--space-xl);
+	margin-block-start: var(--space-lg);
 	margin-block-end: var(--space-md);
 
 }
@@ -106,8 +107,7 @@ article{
 	margin-inline: auto;
 	padding-block: var(--space-xl);
 	padding-inline: var(--page-padding);
-	margin-block-end: var(--section-spacing);
-	background-color: white;
+	margin-block-end: var(--section-spacing);;
 }
 
 
@@ -153,8 +153,11 @@ p a{
 #response {
 	padding-block-start: var(--space-xl);
 	margin-block-start: var(--space-lg);
-	margin-inline-start: auto;
-	margin-inline-end: 5;
+
+	> header, >section {
+		margin-inline-start: 15%;
+		text-align: left;
+	}
 }
 
 /* Larger red statments to emphasize my main takeaways */
@@ -163,7 +166,7 @@ p a{
 	margin-inline: auto;
 	font-size: 1.5rem;
 	line-height: 1;
-	text-align: center;
+	text-align: auto;
 }
 
 /* Emphasis */
